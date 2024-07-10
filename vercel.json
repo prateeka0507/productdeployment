@@ -1,19 +1,14 @@
 {
   "builds": [
     {
-      "src": "productdeployment.py",
+      "src": "app.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "setup.sh",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "public" }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "productdeployment.py"
+      "dest": "app.py"
     }
   ]
 }
