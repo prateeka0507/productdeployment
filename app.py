@@ -146,3 +146,6 @@ if source_file and target_file:
 
 else:
     st.write("Please upload both source and target Excel files to proceed.")
+if __name__ == "__main__":
+    import os
+    os.system('streamlit run app.py')
