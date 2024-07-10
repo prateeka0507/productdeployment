@@ -1,3 +1,3 @@
 #!/bin/bash
 pip install streamlit pandas openai python-dotenv
-streamlit run productdeployment.py --server.port 80
+streamlit run app.py --server.port 80
